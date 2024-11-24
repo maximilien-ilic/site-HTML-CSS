@@ -1,0 +1,139 @@
+/*couleur rouge pour le bouton IIM*/
+.red {
+    color: red;
+}
+/*dark mode*/
+.dark-mode {
+    background-color: rgb(62, 62, 62);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.4s;
+}
+/*style pour les tabs*/
+.tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab-active {
+  background-color: #4CAF50; 
+  color: rgb(0, 0, 0);
+}
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.contentAccueil {
+  background-color: #add8e6;
+  padding: 20px;
+}
+
+.contentServices {
+  background-color: #90ee90;
+  padding: 20px;
+}
+
+.contentContact {
+  background-color: #f08080;
+  padding: 20px;
+}
+
+.contentRegister {
+  background-color: #ecf575;
+  padding: 20px;
+}
+.contentProjet {
+  background-color: #ad12e0;
+  padding: 20px;
+}
+.contentAvis {
+  background-color: #f8a845;
+  padding: 20px;
+}
+button {
+  margin-left: 20px; ;
+  margin-bottom: 30px ;
+  margin-top: 10px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+/*style pour le message d'erreur ou de success*/
+.message-error {
+  border:1px solid rgba(212,42,0,1);
+  color: rgb(0,0,0);
+  background-color: rgba(200,42,0,4);
+  padding: 16px 32px;
+  margin-bottom:20px ;
+  display:none;
+}
+.message-success {
+  border:1px solid rgba(81,150,2);
+  color: rgb(81,150,2);
+  background-color: rgba(113,212,0,0,4);
+  padding: 16px 32px;
+  margin-bottom:20px ;
+  display:none;
+}
+* {
+  font-size:16px;
+  font-family: sans-serif;
+  margin: 0;
+}
+body{
+  width: 80%;
+  margin: 80px auto;
+}
+form {
+  border:1px solid rgba(153,153,153,0,6);
+}
+form>div {
+  margin: 30px 20px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+ input {
+  height: 20px;
+  width: 40%;
+}
+/*style pour le fond en cas d'erreur ou de success*/
+.success {
+  border: 2px solid rgb(81, 150, 2); /* Bordure verte */
+  background-color: rgba(113, 212, 0, 0.2); /* Fond vert clair */
+}
+.message-error.visible {
+  display: block;
+
+}
+.error {
+  border: 2px solid rgb(159, 7, 7); /* Bordure verte */
+  background-color: rgba(240, 77, 77, 0.623); /* Fond vert clair */
+}
+/*style pour avis*/
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #25252591;
+  border-radius: 4px;
+  background-color: #c9bebe;
+  font-size: 16px;
+}

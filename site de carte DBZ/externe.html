@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="title">IIM</p>
+    <button id="dark">DARK MODE</button>
+    <ul class="tabs">
+        <li class="tab tabAccueil tab-active">Accueil</li>
+        <li class="tab tabServices">Services</li>
+        <li class="tab tabContact">Contact</li>
+        <li class="tab tabRegister">Connecte toi</li>
+        <li class="tab tabProjet">Mon projet</li>
+        <li class="tab tabAvis">votre Avis</li>
+      </ul>     
+      <div class="content contentAccueil active">
+        <p>Bienvenue sur la page d'accueil.</p>
+      </div>
+      <div class="content contentServices">
+        <p>Découvrez nos services.</p>
+      </div>
+      <div class="content contentContact">
+        <p>Contactez-nous ici.</p>
+      </div>
+      <div class="content contentRegister">
+        <div class="message-error" id="errorContainer">
+          <ul id="errorList"></ul>
+        </div>
+        <div class="message-success" id="successMessage" style="display: none;">
+          <p>CORRECT</p>
+        </div>
+        <form id="registerForm" method="POST" enctype="multipart/form-data">
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Votre pseudo">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Votre email">
+          </div>
+          <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe">
+          </div>
+          <div>
+            <label for="password2">Confirmer mot de passe</label>
+            <input type="password" id="password2" name="password2" placeholder="Confirmer mot de passe">
+          </div>
+          <button type="submit">S'inscrire</button>
+          <button type="button">Mot de passe oublié</button>
+        </form>
+      </div>
+      <div class="content contentProjet">
+        <label for="story"> mon site de carte DBZ</label>
+        <textarea id="story" name="story" rows="3" cols="130">
+        Un futur projet est toujours une source d'excitation et d'opportunité. Celui que nous envisageons promet d'apporter une réelle valeur ajoutée, tant par son ambition que par son impact potentiel. Il s'agit d'une initiative innovante, pensée pour répondre à des besoins spécifiques tout en intégrant des solutions modernes et durables. Nous avons déjà identifié les grandes lignes directrices et les objectifs principaux, mais le processus est encore ouvert à la collaboration et à l'adaptabilité. Ce projet représentera non seulement un défi stimulant, mais aussi une chance de mobiliser les talents, d’explorer de nouvelles idées et de générer un changement positif. Nous sommes impatients de partager plus de détails et de faire avancer cette vision vers sa concrétisation.
+        </textarea>
+      </div>  
+      <div class="content contentAvis">
+        <p>Donnez votre avis sur le site :</p>
+        <select name="Avis" id="avis">
+          <option value="5">Parfait</option>
+          <option value="4">Très bien</option>
+          <option value="3">Bien</option>
+          <option value="2">Mauvais</option>
+          <option value="1">Très mauvais</option>
+        </select>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>

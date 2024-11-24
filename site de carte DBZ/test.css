@@ -1,22 +1,19 @@
-body { 
-    background: linear-gradient(135deg, #8c00ff, #4c0776, #7800b9);
-    background-size: 1920px 2580px;
+body{
+    background-image: url("fond.png");
+    background-size: 1920px 1580px;
     background-repeat: no-repeat;
-    background-position: center;
-    backdrop-filter: blur(3px); /* Effet de flou léger */
-    font-family: "Roboto Slab", serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
+
 *{
-    box-sizing: border-box;/* police de base */
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
     font-family: "Roboto Slab", serif;
     font-style: normal;
     font-size: 20px;
 }
 
-.article{ /* reglage flex*/
+.article{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -24,7 +21,7 @@ body {
 
 
 
-.custom-text{ /* titres*/
+.custom-text{
     margin-left: 300px;
     margin-right: 300px;
     margin-top:50px;
@@ -37,10 +34,9 @@ body {
     color :rgb(255, 128, 0)
     }
 
-.deck1{/*legende bouton */
+.deck1{
     font-family: "Roboto Slab", serif;
     font-weight: 400;
-    /*pour pouvoir mettre le texte malgré le margin */
     position: absolute;
     top: 33%;
     left: 76%;
@@ -54,7 +50,7 @@ body {
     }
 
 
-.pack1{/* legende bouton*/
+.pack1{
     font-family: "Roboto Slab", serif;
     font-weight: 400;
     position: absolute;
@@ -69,19 +65,19 @@ body {
     color :rgb(89, 0, 255)
     }
 
-.bouton1/*bouton pour changer de page */
+.bouton1
 {
     width : 512px;
     height : 600px;
-    margin-top: 100px;
-    margin-left: 35%;
+    margin-top:100px;
+    margin-left: 100px;
     width: 512px;
     border: 5px solid rgb(9, 2, 105);
     display : block; 
     background : url("vegeta.png")no-repeat;
 }
 
-.bouton1:hover/* permet de changer l'image quand le cursor est situé au dessus de l'image*/
+.bouton1:hover
 {
     background-image : url("vegetablue.png");
     width: 512px;
@@ -94,7 +90,7 @@ body {
 {
     width : 512px;
     height : 600px;
-    margin-left: 130%;
+    margin-left: 300px;
     margin-top:100px;
     width: 512px;
     border: 5px solid rgb(9, 2, 105);
@@ -110,7 +106,7 @@ body {
     border: 5px solid rgb(9, 2, 105);
 }
 
-.logo /*logo permetant de retourner sur la page d'accueil */
+.logo
 {
     width : 100px;
     height : 100px;
@@ -121,7 +117,7 @@ body {
     display : block; 
     background : url("logo.png")no-repeat;
 }
-.custom-text2{ /*titre */
+.custom-text2{
     font-family: "Anton", sans-serif;
     font-weight: 350;
     position: absolute;
@@ -137,12 +133,11 @@ body {
     color :rgb(255, 128, 0)
     }
 
-.carte{/*parametre flex */
+.carte{
     margin-top: 50px;
     width: calc( 100% / 4);
     height: 465px;
 }
-/*bouton reseaux sociaux footer */
 .X
 {
     width : 32x;
@@ -182,145 +177,48 @@ body {
     display : block; 
     background : url("facebook.png")no-repeat;
 }
-.footer1{/*parametre flex footer */
+.footer1{
     width: calc( 100% / 3);
     height: 200px;
     margin-top: 100px;
     
 }
-.footerbloc{ /* bloc footer*/
+.footerbloc{
     margin-top: 50px;
     height: 350px;
     border: 5px solid rgb(255, 255, 255);
     background-color: rgb(255 255 255 / 50%);
 }
 
-.contenant {/* parametre flex*/
-    display: flex; 
+.container {
+    display: flex; /* Permet d'aligner les éléments enfants en ligne */
 }
 
-.choixP {/* barre a gauche permetant de changer de page*/
+.choixP {
     margin-top: 50px;
     margin-left: 20px;
     width: 250px;
     height: 600px;
     border: 5px solid rgb(43, 1, 64);
-    background-color: rgba(176, 163, 181, 0.5);
-}
-.section4 {/* parametre flex*/
-    display: flex;
-    margin-left: 20px; 
+    background-color: rgba(82, 0, 114, 0.5);
 }
 
-.article1 {/*parametre flex + bordure/bloc */
+.section4 {
+    display: flex;
+    margin-left: 20px; /* Espace entre les deux sections */
+}
+
+.article {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    width: 1000px; 
-    margin-top: 30px;
-    border: 5px solid red; 
-    background-color: antiquewhite;
-    padding: 10px; 
-    box-sizing: border-box; 
+    justify-content: space-between; /* Espace entre les éléments */
+    width: 100%; /* S'assurer que ça utilise toute la largeur disponible */
 }
 
-.booster {/* parametre flex*/
-    margin: 10px; 
-    width: calc(100/3);
+.booster {
+    margin: 10px; /* Espace autour de chaque booster */
+    width: calc( ); /* Ajustement pour le padding */
     height: 500px;
 }
-
-
-
-.prix{ /* bouton prix */
-    font-family: "Anton", sans-serif;
-    font-weight: 350;
-    font-style: bold;
-    font-size: 65px;
-    border: 5px solid rgb(160, 1, 1);
-    display : block; 
-    background-color: black;
-    text-align: center;
-    color :rgb(250, 250, 250)
-    
+@media screen and (max-width: 800px) { 
 }
-.prix:hover{/* change la couleur du bouton quand le curseur passe dessus*/
-    background-color :aquamarine;
-
-}
-/* affichage téléphone*/
-@media screen and (max-width: 800px) {
-    body {
-      background-size: cover; 
-      background-position: center;
-    }
-  
-    .custom-text {
-      margin-left: 20px;
-      margin-right: 20px;
-      font-size: 40px; 
-    }
-  
-    .deck1{
-      font-size: 25px; 
-      border: 2px solid rgb(89, 0, 255);
-    }
-    .pack1{
-        font-size: 25px; 
-        border: 2px solid rgb(89, 0, 255);
-    }
-    .bouton1{
-      width: 300px;
-      height: 400px;
-      margin-left: 10px;
-      margin-right: 10px;
-      background-size: contain; 
-    }
-    .bouton2 {
-        width: 300px;
-        height: 400px;
-        margin-left: 10px;
-        margin-right: 10px;
-        background-size: contain; 
-    }
-    .custom-text2 {
-      font-size: 35px; 
-      width: 90%;
-    }
-  
-    .carte {
-      width: 100%;
-      height: auto; 
-    }
-  
-    .footer1 {
-      width: 100%; 
-      height: auto;
-    }
-  
-    .footerbloc {
-      height: auto;
-    }
-  
-    .choixP {
-      width: 100%;
-      margin-left: 0;
-      height: auto;
-    }
-  
-    .section4{
-      flex-direction: column; 
-    }
-    .article1 {
-        flex-direction: column; 
-    }
-    .booster {
-      width: 100%; 
-      height: auto;
-    }
-  
-    .prix {
-      font-size: 40px; 
-      border: 3px solid rgb(160, 1, 1);
-    }
-  }

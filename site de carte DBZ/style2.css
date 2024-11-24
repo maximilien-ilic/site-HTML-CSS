@@ -1,0 +1,222 @@
+/* Général */
+body { 
+    background: linear-gradient(135deg, #8c00ff, #4c0776, #7800b9);
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px); /* Effet de flou léger */
+    font-family: "Roboto Slab", serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* En-tête */
+.custom-text { 
+    margin: 50px auto;
+    padding: 10px;
+    font-family: "Anton", sans-serif;
+    font-size: 75px;
+    border: 5px solid rgb(255, 128, 0);
+    text-align: center;
+    color: rgb(255, 128, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    max-width: 90%;
+}
+
+/* Section principale */
+.section {
+    flex: 1; /* Remplit l'espace restant pour pousser le footer vers le bas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.bouton1, .bouton2 {
+    width: 500px; /* Taille réduite */
+    height: 600px;
+    border: 5px solid rgba(9, 2, 105, 0.8); /* Bordure centrée et nette */
+    background-size: 100% 100%; /* Ajustement parfait de l'image */
+    background-position: center;
+    border-radius: 15px; /* Coins légèrement arrondis */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+
+/* Effet de couleur plus subtil */
+.bouton1 {
+    background: linear-gradient(to bottom right, rgba(0, 0, 128, 0.3), rgba(0, 0, 255, 0.1)), url("vegeta.png") no-repeat;
+}
+
+.bouton2 {
+    background: linear-gradient(to bottom left, rgba(128, 0, 0, 0.3), rgba(255, 0, 0, 0.1)), url("gokuu.png") no-repeat;
+}
+
+/* Hover avec un effet réduit */
+.bouton1:hover {
+    transform: scale(1.03); /* Légère mise en avant */
+    box-shadow: 0px 10px 20px rgba(0, 0, 128, 0.4); /* Ombre plus douce */
+    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.5), rgba(0, 128, 255, 0.2)), url("vegetablue.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.bouton2:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.4);
+    background: linear-gradient(to bottom left, rgba(255, 64, 64, 0.5), rgba(255, 128, 128, 0.2)), url("gokuui.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Texte repositionné au-dessus */
+.pack1, .deck1 {
+    font-size: 40px; /* Texte toujours bien visible */
+    font-weight: bold;
+    text-align: center;
+    color: #2a2a2a; /* Couleur sombre pour le contraste */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* Effet de relief doux */
+    margin-bottom: 15px; /* Espace sous le texte */
+}
+
+/* Conteneur principal pour centraliser le texte au-dessus */
+.bouton1-container, .bouton2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacement entre texte et bouton */
+}
+
+/* Footer */
+footer {
+    margin-top: auto; /* Pousse le footer vers le bas si le contenu est insuffisant */
+}
+
+.footerbloc {
+    padding: 30px 20px;
+    background:linear-gradient(135deg, #f0692a, #865d20, #dd5500);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer1 ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.footer1 h2 {
+    margin-bottom: 10px;
+}
+
+.reseau li a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    transition: transform 0.2s;
+    margin-right: 10px;
+}
+
+.reseau li a:hover {
+    transform: scale(1.2);
+}
+/* Style pour le bouton externe */
+.bouton-externe {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-left: 40%;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50; /* Vert */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+
+.bouton-externe:hover {
+    background-color: #45a049; /* Vert foncé */
+    transform: scale(1.05);
+}
+/*bouton reseaux sociaux footer */
+.X
+{
+    width : 32x;
+    height : 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display : block; 
+    background : url("reseaux-sociaux.png")no-repeat;
+}
+
+.youtube
+{
+    width : 32x;
+    height : 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display : block; 
+    background : url("youtube.png")no-repeat;
+}
+
+.instagram
+{
+    width : 32x;
+    height : 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display : block; 
+    background : url("instagram.png")no-repeat;
+}
+
+.facebook
+{
+    width : 32x;
+    height : 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display : block; 
+    background : url("facebook.png")no-repeat;
+}
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .bouton1, .bouton2 {
+        width: 400px;
+        height: 500px;
+    }
+
+    .article {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .custom-text {
+        font-size: 40px;
+    }
+
+    .bouton1, .bouton2 {
+        width: 300px;
+        height: 400px;
+    }
+
+    .footerbloc {
+        flex-direction: column;
+        align-items: center;
+    }
+}
