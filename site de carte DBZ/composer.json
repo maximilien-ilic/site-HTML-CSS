@@ -1,0 +1,6 @@
+{
+    "name": "pokem/courbackend",
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}
